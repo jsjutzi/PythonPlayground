@@ -1,4 +1,4 @@
-# ML from scratch
+# ML from scratch -- Pure Python
 
 inputs = [1, 2, 3, 2.5]
 
@@ -24,4 +24,6 @@ for neuron_weights, neuron_bias in zip(weights, biases):
 
 
 print(layer_outputs)
+
+
 
