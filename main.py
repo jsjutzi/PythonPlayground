@@ -1,27 +1,22 @@
-computer_parts = [
-    "computer",
-    "monitor",
-    "keyboard",
-    "mouse",
-    "mouse mat"
-]
+empty_list = []
+even = [2, 4, 6, 8]
+odd = [1, 3, 5, 7]
 
-print(computer_parts)
+numbers = [even, odd]
+print(numbers)
 
-data = [4, 5, 104, 105, 110, 120, 130, 150,
-        160, 170, 183, 185, 187, 188, 191, 350, 360]
+t = ("a", "b", "c")
+print(t)
 
-min_valid = 100
-max_valid = 200
+a = b = c = d = e = f = 12
+print(c)
 
-stop = 0
-for index, value in enumerate(data):
-    if value >= min_valid:
-        stop = index
-        break
-print(stop)
-del data[:stop]
-print(data)
-data.reverse()
-print(data)
+# Unpacking a tuple
+x, y, z, (a, b, c) = 1, 2, 76, (1, 3, 4)
+print(x)
+print(y)
+print(z)
+print(a)
 
+for t in enumerate("abcdefghi"):
+    print(t)
