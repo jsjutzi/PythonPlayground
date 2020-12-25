@@ -20,3 +20,23 @@ print(a)
 
 for t in enumerate("abcdefghi"):
     print(t)
+
+
+# Fibonacci:
+def fibonacci(n: int) -> int:
+    """Return the `n` th fibonacci number for positive `n` """
+    if n <= 0 <= 1:
+        return
+    n_minus1, n_minus2 = 1, 0
+    result = None
+
+    for f in range(n - 1):
+        result = n_minus2 + n_minus1
+        n_minus2 = n_minus1
+        n_minus1 = result
+
+    return result
+
+
+for i in range(36):
+    print(i, fibonacci(i))
