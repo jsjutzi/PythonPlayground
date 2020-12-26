@@ -1,5 +1,4 @@
 import numpy as np
-from nnfs.datasets import spiral_data
 
 inputs = [[1, 2, 3, 2.5], [2., 5., -1., 2], [-1.5, 2.7, 3.3, -0.8]]
 
@@ -19,6 +18,7 @@ layer1_outputs = np.dot(inputs, np.array(weights).T) + biases
 layer2_outputs = np.dot(layer1_outputs, np.array(weights2).T) + biases2
 
 print(layer2_outputs)
+
 
 
 
