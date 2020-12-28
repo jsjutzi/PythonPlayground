@@ -25,3 +25,6 @@ with open("/Users/jackjutzi/sample.txt", 'a') as jabber:
         result = i*2
         print("{0} times 2 is {1}".format(i, result), file=jabber)
     print("-"*20, file=jabber)
+
+for m in dir(__builtins__):
+    print(m)
