@@ -4,7 +4,7 @@ class Kettle(object):
         self.price = price
         self.on = False
 
-
+# Empty comment
 kenwood = Kettle("Kenwood", 8.99)
 print(kenwood.make)
 print(kenwood.price)
